@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: darkcyan;
+}
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logo{
+ width: 30%;
+ font-size: larger;
+ font-weight: 700;
+ padding: 1rem;
+}
+
+.nav-wrapper{
+    max-width: 700px;
+    width: 70%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.home,.contact,.about{
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0px;
+    color: darkcyan;
+    font-weight: 700;
+
+}
+.home:hover,.contact:hover,.about:hover{
+    border-radius: 10px;
+    background-color: gold;
+    color: black;
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
+
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkcyan;
+
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    max-height: 600px;
+    width: 70%;
+    
+
+}
+.header {
+    width: 80%;
+    max-width: 600px;
+    padding: 0rem;
+    text-align: center;
+}
+
+.section-image{
+    width: 50%; 
+}
+
+.header h2 {
+    color: gold;
+    font-size: 2rem;
+
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+input {
+    width: 80%;
+    height: 40px;
+  
+    border-right: none;
+    text-align: center;
+    border-color: black;
+    border-width: 0px;
+}
+
+::placeholder {
+    text-align: start;
+    padding-left: 20px;
+    color: black;
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: gold;
+    border-left: solid  gold;
+
+}
+
+.button:hover{
+    background-color: black;
+    cursor: pointer;
+    border-left: solid  black;
+    transition: all .5s ease-in-out;
+}
+.result{
+    font-size: 2rem;
+    font-weight: 2rem;
+    text-align: center;
+    padding: 2rem;
+    display: none;
+    background-color: white;
+}
+.add-result{
+    font-weight: 700;
+    color: darkcyan;
+    transition: color 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+
+.container-result {
+    width: 100%;
+    background-color:  darkcyan;
+    position: relative;
+    height: 0px;
+  
+   
+    
+   
+
+}
+
+.show-result{
+    height: fit-content;
+    transition: all 3s ease-in-out;
+   
+}
+
+.container-wrapper{
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin-top: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+    gap: 5rem;
+    
+}
+
+
+.card{
+    border-radius: 10px;
+    width: 280px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: all 2s;
+    opacity: 0;
+}
+
+.show-card{
+    opacity: 1;
+    transition: all 2s;
+}
+
+.card h2{
+    font-size: larger;
+    padding: 1rem;
+}
+.food-img{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 50%;
+
+}
+.button-card{
+    
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    padding: .5em;
+    background-color: black;
+    color: white;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+.button-card:hover{
+  font-weight: 900;
+  color: black;
+  background-color: gold;
+  transition: all .5s ease-in-out;
+}
+
+.more{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+.description{
+    max-width: 650px;
+    width: 70%;
+    max-height: 500px;
+    overflow:auto;
+    padding: 20px;
+     background-color: white;
+    position: absolute;
+    justify-content: center;
+    border-radius: 50px;
+    border: solid black;
+    opacity: 0;
+    transition: all 1s;
+    top: -200%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+
+    
+
+}
+
+.show-button{
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    opacity: 1;
+    transition: all .25s ease;
+}
+
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.hide-button{
+    display: none;
+}
+
+
+.contact-section{
+    text-align: center;
+    background-color:darkcyan;
+}
+
+.contact-header{
+    margin: auto;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+   
+}
+.contact-us-container{
+    width: 100%;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.contact-us-container h2{
+    color: darkcyan;
+    font-weight: 900;
+}
+
+.form{
+    margin: auto;
+    padding: 2rem;
+    background-color: gold ;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    font-weight: 800;
+    margin-bottom: 2%;
+    border-radius: 10px;
+
+}
+.form h4{
+    text-align: start;
+}
+
+.form-button{
+    margin: 10px 0px;
+    text-align: center;
+    background-color: #4899;
+    padding: 1em;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+input{
+    border: none;
+    max-width: 400px;
+    background-color: white;
+   
+
+}
+
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: black;
+    color: darkcyan;
+    font-weight: 900;
+}
